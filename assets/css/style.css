@@ -131,7 +131,7 @@ body {
 .card {
     width: 50%;
     border: 1px solid #3e4fb3;
-    height: 250px;
+    /* height: 250px; */
     margin-left: 20px;
     background-color: #3e4fb3;
     display: flex;
@@ -278,6 +278,6 @@ body {
 
 .fa-brands {
     font-size: 15px;
-    color: black;
+    color: rgb(79, 65, 65);
 
 }
