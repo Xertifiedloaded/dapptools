@@ -1,0 +1,283 @@
+.my-header {
+    background-image: url(/assets/images/wave-hero-background.svg);
+    background-position: top;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-container {
+    background-image: url(/assets/images/wave-header.svg);
+    height: 15vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    /* position: fixed; */
+    width: 100%;
+    position: fixed;
+}
+.nav-container::before{
+    content: "";
+    z-index: 2;
+}
+
+
+
+.nav {
+    width: 100%;
+    flex: 0 0 15%;
+    
+}
+
+.nav>.list-menu {
+    list-style-type: none;
+}
+
+.nav>.list-menu .btn {
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 17px;
+}
+
+.text-container {
+    padding-top: 100px;
+    text-align: center;
+    line-height: 2;
+}
+
+.text-container>.text {
+    font-size: 57px;
+    color: white;
+
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+}
+
+.text-container>.para {
+    color: white;
+    font-size: 18px;
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+
+.text-container>.connect-btn {
+    padding: 14px 22px;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 23px;
+    color: white;
+    margin-top: 20px;
+}
+
+.img-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.img-container>.img {
+    width: 30%;
+}
+
+.serve {
+    text-align: center;
+}
+
+.serve>.services {
+    color: rgba(0, 0, 255, 0.725);
+    font-size: 31px;
+    text-transform: capitalize;
+}
+
+.my-section {
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid white;
+    /* height: 80vh; */
+    box-shadow: 0 0 106px -59px #adabad;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 50%;
+    border: 1px solid #3e4fb3;
+    height: 250px;
+    margin-left: 20px;
+    background-color: #3e4fb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    scale: 0.98;
+}
+
+.card:hover {
+    scale: 1.03;
+}
+
+.content {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.content>.verify {
+    font-size: 25px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.content>.protect {
+    font-size: 15px;
+    color: white;
+
+
+}
+
+
+.fa-sharp,
+.fa-solid {
+    margin-top: 20px;
+    width: 12%;
+    font-size: 55px;
+    color: white;
+    /* background-color: white; */
+}
+
+.text-btn {
+    text-align: center;
+    background-color: #3e4fb3;
+    padding: 20px 0;
+}
+
+.text-btn>.get-started {
+    font-size: 1.5em;
+    color: white;
+}
+
+.text-btn>.btn2 {
+    padding: 18px 30px;
+    background-color: #3e4fb3;
+    border: 2px solid white;
+    margin-top: 20px;
+}
+
+.btn2:hover {
+    background-color: blue;
+}
+
+.text-btn>.btn2 .anchor {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer {
+    background-image: url(/assets/images/wave-footer.svg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+
+}
+
+.sync {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-text {
+    padding-top: 100px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.social-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+}
+
+.social-logo>.social-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.social-menu>.social-list {
+    border: 2px solid white;
+    width: 27px;
+    height: 27px;
+    border-radius: 100%;
+    margin: 0 5px;
+    background-color: none;
+}
+
+.social-list:hover {
+    background-color: white;
+}
+
+.text-social,
+.social-logo {
+    width: 50%;
+}
+
+.footer-text {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.anchor2 {
+    padding-left: 7px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.fa-brands {
+    font-size: 15px;
+    color: black;
+
+}
