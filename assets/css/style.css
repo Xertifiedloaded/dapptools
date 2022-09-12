@@ -97,11 +97,29 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    /* position: relative; */
+    
+    animation-name: xertified;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    z-index: 1; 
+} 
+
+.img {
+    width: 30%;
+    
 }
 
-.img-container>.img {
-    width: 30%;
+@keyframes xertified {
+    0% { left: 5px; }
+    20% {right: 5px; }
+    75% { top: 5px;}
+    100%{ bottom: 5px; }
 }
+
+
 
 .serve {
     text-align: center;
@@ -140,6 +158,7 @@ body {
     transition: all 0.3s linear;
     scale: 0.98;
     border-radius: 20px;
+    /* padding: 10px 0; */
 }
 
 .card:hover {
@@ -147,10 +166,10 @@ body {
 }
 
 .content {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 60px 0;
+    padding: 80px 0;
 }
 
 .content>.verify {
