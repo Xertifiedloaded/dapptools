@@ -253,6 +253,9 @@ body {
     border-radius: 100%;
     margin: 0 5px;
     background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-list:hover {
@@ -271,12 +274,13 @@ body {
 }
 
 .anchor2 {
-    padding-left: 7px;
+  
     width: 100%;
     text-decoration: none;
 }
 
 .fa-brands {
+
     font-size: 15px;
     color: rgb(79, 65, 65);
 
