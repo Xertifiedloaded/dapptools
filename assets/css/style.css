@@ -139,6 +139,7 @@ body {
     align-items: center;
     transition: all 0.3s linear;
     scale: 0.98;
+    border-radius: 20px;
 }
 
 .card:hover {
@@ -149,7 +150,7 @@ body {
     width: 95%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 60px 0;
 }
 
 .content>.verify {
