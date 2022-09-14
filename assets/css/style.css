@@ -42,7 +42,7 @@ body {
 
 .nav {
     width: 100%;
-    flex: 0 0 15%;
+    /* flex: 0 0 15%; */
     
 }
 
@@ -198,7 +198,9 @@ body {
     color: white;
     /* background-color: white; */
 }
-
+.mobile{
+    display: none;
+}
 .text-btn {
     text-align: center;
     background-color: #3e4fb3;
@@ -303,4 +305,38 @@ body {
     font-size: 15px;
     color: rgb(79, 65, 65);
 
+}
+
+@media screen and (max-width:600px) {
+.mobile{
+    display: block;
+    width: 100%;
+}
+.nav-container{
+    width: 100%;
+}
+.mobile .list-menu{
+height: 100px;
+width: 100%;
+background-color: #3e4fb3;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+    
+}
+.mobile .hide{
+display: none;
+}
+.mobile .show{
+display: flex;
+
+}
+.mobile > .hamburger{
+display: flex;
+justify-content: end;
+}
+  .desktop{
+    display: none;
+  }  
 }
