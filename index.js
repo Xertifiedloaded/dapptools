@@ -6,3 +6,5 @@ hide.classList.replace("hide","show")
 console.log("shooooooow")
 }
 hamburger.addEventListener("click",showMenu)
+
+
