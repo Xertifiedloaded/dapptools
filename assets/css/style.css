@@ -369,19 +369,14 @@ justify-content: end;
 }
 
 @media  screen and (max-width:900px) {
-    .text{
-        padding-top: 50px;
+ 
+    .cards{
+        width: 100%;
     }
-   .img-container{
+
+
+.card{
     width: 100%;
-   }
-    .img-container >.img{
-        width: 90%;
-    }
-.cards{
-    
-
-
 }
 
 
