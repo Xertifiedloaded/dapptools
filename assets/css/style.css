@@ -12,13 +12,20 @@
     margin: 0;
     padding: 0;
 }
-.anchor3{
+
+.anchor3 {
     text-decoration: none;
     color: white;
     text-transform: capitalize;
 }
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .nav-container {
@@ -33,7 +40,8 @@ body {
     width: 100%;
     position: fixed;
 }
-.nav-container::before{
+
+.nav-container::before {
     content: "";
     z-index: 2;
 }
@@ -43,7 +51,7 @@ body {
 .nav {
     width: 100%;
     /* flex: 0 0 15%; */
-    
+
 }
 
 .nav>.list-menu {
@@ -69,17 +77,20 @@ body {
     color: white;
 
 }
-.desktop >.list-menu{
+
+.desktop>.list-menu {
 
     display: flex;
     justify-content: end;
-    align-items: center; 
+    align-items: center;
 }
-.list-menu >.list-item-desktop{
+
+.list-menu>.list-item-desktop {
     border: 1px solid white;
     padding: 12px 30px;
     margin-right: 10px;
 }
+
 .text-box {
     display: flex;
     justify-content: center;
@@ -112,25 +123,36 @@ body {
     text-align: center;
     margin-top: 30px;
     /* position: relative; */
-    
+
     animation-name: xertified;
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
     animation-direction: normal;
-    z-index: 1; 
-} 
+    z-index: 1;
+}
 
 .img {
     width: 30%;
-    
+
 }
 
 @keyframes xertified {
-    0% { left: 5px; }
-    20% {right: 5px; }
-    75% { top: 5px;}
-    100%{ bottom: 5px; }
+    0% {
+        left: 5px;
+    }
+
+    20% {
+        right: 5px;
+    }
+
+    75% {
+        top: 5px;
+    }
+
+    100% {
+        bottom: 5px;
+    }
 }
 
 
@@ -208,9 +230,11 @@ body {
     color: white;
     /* background-color: white; */
 }
-.mobile{
+
+.mobile {
     display: none;
 }
+
 .text-btn {
     text-align: center;
     background-color: #3e4fb3;
@@ -311,76 +335,83 @@ body {
 
 
 .fa-brands {
-
+color: white;
     font-size: 15px;
-    color: rgb(79, 65, 65);
+    /* color: rgb(79, 65, 65); */
 
 }
 
 @media screen and (max-width:600px) {
-.mobile{
-    display: block;
-    width: 100%;
-}
-.nav-container{
-    width: 100%;
-}
-.mobile .list-menu{
-height: 100px;
-width: 100%;
-background-color: #3e4fb3;
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-    
-}
-.mobile .hide{
-display: none;
-}
-.mobile .show{
-display: flex;
+    .mobile {
+        display: block;
+        width: 100%;
+    }
 
-}
-.mobile > .hamburger{
-display: flex;
-justify-content: end;
-}
-  .desktop{
-    display: none;
-  }  
+    .nav-container {
+        width: 100%;
+    }
+
+    .mobile .list-menu {
+        height: 100px;
+        width: 100%;
+        background-color: #3e4fb3;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .mobile .hide {
+        display: none;
+    }
+
+    .mobile .show {
+        display: flex;
+
+    }
+
+    .hamburger {
+        width: 100%;
+        padding: 5px 0;
+        display: flex;
+        justify-content: end;
+    }
+
+    .desktop {
+        display: none;
+    }
 
 
-.cards{
-    display: block;
-    width: 95%;
-    margin: 0 auto;
-}
-.card{
-    width: 100%;
-    margin: 10px 0;
-    transition: none;
-    scale: none;
-    
-}
-.card:hover{
-    scale: none;
-}
+    .cards {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+        transition: none;
+        scale: none;
+
+    }
+
+    .card:hover {
+        scale: none;
+    }
 }
 
-@media  screen and (max-width:900px) {
- 
-    .cards{
+@media screen and (max-width:900px) {
+
+    .cards {
         width: 100%;
     }
 
 
-.card{
-    width: 100%;
-}
-
-
-
+    .card {
+        width: 100%;
+    }
 
 
 }
